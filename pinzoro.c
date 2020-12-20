@@ -14,6 +14,8 @@ void init_seed(void) {
 	fread(&seed, sizeof(seed), 1, fp);
 	srand(seed);
 	fclose(fp);
+	// seedはクリアしてるので乱数予測は不可能でしょう！
+	seed = 0;
 }
 
 void challenge(void) {
