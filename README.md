@@ -1,5 +1,5 @@
 # pinzoro
-![Genre: Pwn](https://img.shields.io/badge/genre-pwn-brightgreen?style=for-the-badge) ![Difficulty: Medium](https://img.shields.io/badge/difficulty-medium-yellow?style=for-the-badge) ![Author: Satoooon](https://img.shields.io/badge/author-Satoooon-lightgrey?style=for-the-badge) 
+![Genre: Pwn](https://img.shields.io/badge/genre-pwn-brightgreen?style=for-the-badge) ![Difficulty: Hard](https://img.shields.io/badge/difficulty-hard-red?style=for-the-badge) ![Author: Satoooon](https://img.shields.io/badge/author-Satoooon-lightgrey?style=for-the-badge) 
 
 あなたは1億円の借金を抱え、地下の強制労働所に収容されている。
 
