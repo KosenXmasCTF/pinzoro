@@ -39,15 +39,11 @@ void challenge(void) {
 	system("/bin/sh");
 }
 
-void roll_one_dice(void) {
-	printf("1d6 => %d\n", dice());
-}
-
 void roll_dices(void) {
 	char count[128];
 	printf("NUMBER: ");
 	scanf("%127s%*c", count);
-	if (atoi(count) > 10000000) {
+	if (atoi(count) > 100000000) {
 		puts("Sorry, that's too big.");
 		return;
 	}
@@ -62,9 +58,8 @@ void roll_dices(void) {
 int menu(void) {
 	int select;
 	printf(
-		"1. ROLL ONE DICE (PRACTICE)\n"
-		"2. ROLL DICES    (PRACTICE)\n"
-		"3. PINZORO CHALLENGE\n"
+		"1. ROLL DICES (PRACTICE)\n"
+		"2. PINZORO CHALLENGE\n"
 		"SELECT: "
 	);
 	scanf("%d%*c", &select);
@@ -82,9 +77,8 @@ int main(void) {
 	init_seed();
 	while (1) {
 		select = menu();
-		if (select == 1) roll_one_dice();
-		if (select == 2) roll_dices();
-		if (select == 3) {
+		if (select == 1) roll_dices();
+		if (select == 2) {
 			challenge();
 			break;
 		}
