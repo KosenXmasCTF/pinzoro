@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdbool.h>
+#include <unistd.h>
 
 int dice(void) {
 	return rand() % 6 + 1;
@@ -53,6 +54,7 @@ void roll_dices(void) {
 	printf("FINISH ROLLING ");
 	printf(count);
 	printf(" DICES.\n");
+	sleep(1);
 }
 
 int menu(void) {
@@ -67,6 +69,7 @@ int menu(void) {
 }
 
 void setup(void) {
+	alarm(60);
 	setvbuf(stdin, NULL, _IONBF, 0);
 	setvbuf(stdout, NULL, _IONBF, 0);
 }
